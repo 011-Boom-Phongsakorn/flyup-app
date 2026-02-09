@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary: #2563eb;
+  /* Blue 600 */
+  --color-primary-dark: #1e40af;
+  /* Blue 800 */
+  --font-thai: 'IBM Plex Sans Thai', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@theme {
+  --font-sans: "Inter", "IBM Plex Sans Thai", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #0f172a;
+  /* Slate 900 */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+/* Enforce Container Constraints */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  /* px-6 */
+  padding-right: 1.5rem;
+  max-width: 1280px;
+  /* Force max width to 1280px for better readability */
+}
+
+/* Responsive Font Adjustments */
+h1 {
+  line-height: 1.2 !important;
+}
+
+p {
+  line-height: 1.6;
+}
